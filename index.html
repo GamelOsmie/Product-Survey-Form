@@ -12,644 +12,436 @@
     <title>Product Survey Questionnaire</title>
   </head>
   <body>
-    <div>
-      <header class="header">
-        <nav class="navbar">
+    <main>
+      <section class="section-left">
+        <header>
+          <nav class="navbar">
+            <!-- Logo -->
+            <img
+              class="navbar__logo"
+              src="./assets/mped_circle.svg"
+              alt="mpedigree logo"
+            />
+
+            <a class="navbar__link" href="http://" target="_blank"
+              >Discover Goldkeys</a
+            >
+          </nav>
+        </header>
+
+        <section class="section-left__details">
           <img
-            class="navbar__logo"
-            src="./assets/mped_circle.svg"
-            alt="mpedigree logo"
+            class="section-left__infographic"
+            src="./assets/info_graphic_1.svg"
+            alt="info_graphic_1"
           />
-          <a class="navbar__link" href="http://" target="_blank"
-            >Discover Goldkeys</a
-          >
-        </nav>
-      </header>
+          <h1 class="section-left__title">Review Wizard</h1>
+          <p>
+            Tation argumentum et usu, dicit viderer evertitur te has. Eu dictas
+            concludaturque usu, facete detracto patrioque an per, lucilius
+            pertinacia eu vel. Adhuc invidunt duo ex. Eu tantas dolorum
+            ullamcorper qui.
+          </p>
 
-      <main class="content">
-        <h1 class="content__title">Product Feedback Survey</h1>
-        <section class="content__form">
-          <!-- question 1 -->
-          <div class="form__question-box">
-            <label class="question-number" for="q1">Question 1 of 8</label>
-            <div id="q1">
-              <p class="question-box__question">
-                Please rate your overall satisfaction with the product
-              </p>
-              <div class="question-box__answers">
-                <div class="answer">
-                  <input
-                    type="radio"
-                    id="radio1"
-                    name="radio-group"
-                    class="radio-input"
-                  />
-                  <label for="radio1" class="radio-label"
-                    >Very Dissatisfied</label
-                  >
-                </div>
-
-                <div class="answer">
-                  <input
-                    type="radio"
-                    id="radio2"
-                    name="radio-group"
-                    class="radio-input"
-                  />
-                  <label for="radio2" class="radio-label">Dissatisfied</label>
-                </div>
-
-                <div class="answer">
-                  <input
-                    type="radio"
-                    id="radio3"
-                    name="radio-group"
-                    class="radio-input"
-                  />
-                  <label for="radio3" class="radio-label">Neutral</label>
-                </div>
-
-                <div class="answer">
-                  <input
-                    type="radio"
-                    id="radio4"
-                    name="radio-group"
-                    class="radio-input"
-                  />
-                  <label for="radio4" class="radio-label">Satisfied</label>
-                </div>
-
-                <div class="answer">
-                  <input
-                    type="radio"
-                    id="radio5"
-                    name="radio-group"
-                    class="radio-input"
-                  />
-                  <label for="radio5" class="radio-label">Very Satisfied</label>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- question 2 -->
-          <div class="form__question-box">
-            <label class="question-number" for="q2">Question 2 of 8</label>
-            <div id="q2">
-              <p class="question-box__question">
-                Which goals have you used the {company_name} product for?
-              </p>
-              <div class="question-box__answers">
-                <div class="answer">
-                  <textarea rows="6" placeholder="enter your goals"></textarea>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- question 3 -->
-          <div class="form__question-box">
-            <label class="question-number" for="q3">Question 3 of 8</label>
-            <div id="q3">
-              <p class="question-box__question">
-                Please rate your experience with {company_name} product:
-              </p>
-              <div class="question-box__answers">
-                <div class="answer--multi">
-                  <div class="answer__group">
-                    <p class="answer__label">Product Packaging</p>
-
-                    <div class="answers">
-                      <div class="answer">
-                        <input
-                          type="radio"
-                          id="multi_q1_radio1"
-                          name="multi-radio-group"
-                          class="radio-input"
-                        />
-                        <label for="multi_q1_radio1" class="radio-label"
-                          >Very Poor</label
-                        >
-                      </div>
-
-                      <div class="answer">
-                        <input
-                          type="radio"
-                          id="multi_q1_radio2"
-                          name="multi-radio-group"
-                          class="radio-input"
-                        />
-                        <label for="multi_q1_radio2" class="radio-label"
-                          >Poor</label
-                        >
-                      </div>
-
-                      <div class="answer">
-                        <input
-                          type="radio"
-                          id="multi_q1_radio3"
-                          name="multi-radio-group"
-                          class="radio-input"
-                        />
-                        <label for="multi_q1_radio3" class="radio-label"
-                          >Fair</label
-                        >
-                      </div>
-
-                      <div class="answer">
-                        <input
-                          type="radio"
-                          id="multi_q1_radio4"
-                          name="multi-radio-group"
-                          class="radio-input"
-                        />
-                        <label for="multi_q1_radio4" class="radio-label"
-                          >Good</label
-                        >
-                      </div>
-
-                      <div class="answer">
-                        <input
-                          type="radio"
-                          id="multi_q1_radio5"
-                          name="multi-radio-group"
-                          class="radio-input"
-                        />
-                        <label for="multi_q1_radio5" class="radio-label"
-                          >Excellent</label
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="answer--multi">
-                  <div class="answer__group">
-                    <p class="answer__label">Instructions for Use</p>
-
-                    <div class="answers">
-                      <div class="answer">
-                        <input
-                          type="radio"
-                          id="3"
-                          name="multi-radio-group2"
-                          class="radio-input"
-                        />
-                        <label for="multi_q2_radio1" class="radio-label"
-                          >Very Poor</label
-                        >
-                      </div>
-
-                      <div class="answer">
-                        <input
-                          type="radio"
-                          id="multi_q2_radio2"
-                          name="multi-radio-group2"
-                          class="radio-input"
-                        />
-                        <label for="multi_q2_radio2" class="radio-label"
-                          >Poor</label
-                        >
-                      </div>
-
-                      <div class="answer">
-                        <input
-                          type="radio"
-                          id="multi_q2_radio3"
-                          name="multi-radio-group2"
-                          class="radio-input"
-                        />
-                        <label for="multi_q2_radio3" class="radio-label"
-                          >Fair</label
-                        >
-                      </div>
-
-                      <div class="answer">
-                        <input
-                          type="radio"
-                          id="multi_q2_radio4"
-                          name="multi-radio-group2"
-                          class="radio-input"
-                        />
-                        <label for="multi_q2_radio4" class="radio-label"
-                          >Good</label
-                        >
-                      </div>
-
-                      <div class="answer">
-                        <input
-                          type="radio"
-                          id="multi_q2_radio5"
-                          name="multi-radio-group2"
-                          class="radio-input"
-                        />
-                        <label for="multi_q2_radio5" class="radio-label"
-                          >Excellent</label
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="answer--multi">
-                  <div class="answer__group">
-                    <p class="answer__label">Quality of the Product</p>
-
-                    <div class="answers">
-                      <div class="answer">
-                        <input
-                          type="radio"
-                          id="multi_q3_radio1"
-                          name="multi-radio-group3"
-                          class="radio-input"
-                        />
-                        <label for="multi_q3_radio1" class="radio-label"
-                          >Very Poor</label
-                        >
-                      </div>
-
-                      <div class="answer">
-                        <input
-                          type="radio"
-                          id="multi_q3_radio2"
-                          name="multi-radio-group3"
-                          class="radio-input"
-                        />
-                        <label for="multi_q3_radio2" class="radio-label"
-                          >Poor</label
-                        >
-                      </div>
-
-                      <div class="answer">
-                        <input
-                          type="radio"
-                          id="multi_q3_radio3"
-                          name="multi-radio-group3"
-                          class="radio-input"
-                        />
-                        <label for="multi_q3_radio3" class="radio-label"
-                          >Fair</label
-                        >
-                      </div>
-
-                      <div class="answer">
-                        <input
-                          type="radio"
-                          id="multi_q3_radio4"
-                          name="multi-radio-group3"
-                          class="radio-input"
-                        />
-                        <label for="multi_q3_radio4" class="radio-label"
-                          >Good</label
-                        >
-                      </div>
-
-                      <div class="answer">
-                        <input
-                          type="radio"
-                          id="multi_q3_radio5"
-                          name="multi-radio-group3"
-                          class="radio-input"
-                        />
-                        <label for="multi_q3_radio5" class="radio-label"
-                          >Excellent</label
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="answer--multi">
-                  <div class="answer__group">
-                    <p class="answer__label">Product Features</p>
-
-                    <div class="answers">
-                      <div class="answer">
-                        <input
-                          type="radio"
-                          id="multi_q4_radio1"
-                          name="multi-radio-group4"
-                          class="radio-input"
-                        />
-                        <label for="multi_q4_radio1" class="radio-label"
-                          >Very Poor</label
-                        >
-                      </div>
-
-                      <div class="answer">
-                        <input
-                          type="radio"
-                          id="multi_q4_radio2"
-                          name="multi-radio-group4"
-                          class="radio-input"
-                        />
-                        <label for="multi_q4_radio2" class="radio-label"
-                          >Poor</label
-                        >
-                      </div>
-
-                      <div class="answer">
-                        <input
-                          type="radio"
-                          id="multi_q4_radio3"
-                          name="multi-radio-group4"
-                          class="radio-input"
-                        />
-                        <label for="multi_q4_radio3" class="radio-label"
-                          >Fair</label
-                        >
-                      </div>
-
-                      <div class="answer">
-                        <input
-                          type="radio"
-                          id="multi_q4_radio4"
-                          name="multi-radio-group4"
-                          class="radio-input"
-                        />
-                        <label for="multi_q4_radio4" class="radio-label"
-                          >Good</label
-                        >
-                      </div>
-
-                      <div class="answer">
-                        <input
-                          type="radio"
-                          id="multi_q4_radio5"
-                          name="multi-radio-group4"
-                          class="radio-input"
-                        />
-                        <label for="multi_q4_radio5" class="radio-label"
-                          >Excellent</label
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="answer--multi">
-                  <div class="answer__group">
-                    <p class="answer__label">Ease of Use</p>
-
-                    <div class="answers">
-                      <div class="answer">
-                        <input
-                          type="radio"
-                          id="multi_q5_radio1"
-                          name="multi-radio-group5"
-                          class="radio-input"
-                        />
-                        <label for="multi_q5_radio1" class="radio-label"
-                          >Very Poor</label
-                        >
-                      </div>
-
-                      <div class="answer">
-                        <input
-                          type="radio"
-                          id="multi_q5_radio2"
-                          name="multi-radio-group5"
-                          class="radio-input"
-                        />
-                        <label for="multi_q5_radio2" class="radio-label"
-                          >Poor</label
-                        >
-                      </div>
-
-                      <div class="answer">
-                        <input
-                          type="radio"
-                          id="multi_q5_radio3"
-                          name="multi-radio-group5"
-                          class="radio-input"
-                        />
-                        <label for="multi_q5_radio3" class="radio-label"
-                          >Fair</label
-                        >
-                      </div>
-
-                      <div class="answer">
-                        <input
-                          type="radio"
-                          id="multi_q5_radio4"
-                          name="multi-radio-group5"
-                          class="radio-input"
-                        />
-                        <label for="multi_q5_radio4" class="radio-label"
-                          >Good</label
-                        >
-                      </div>
-
-                      <div class="answer">
-                        <input
-                          type="radio"
-                          id="multi_q5_radio5"
-                          name="multi-radio-group5"
-                          class="radio-input"
-                        />
-                        <label for="multi_q5_radio5" class="radio-label"
-                          >Excellent</label
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- question 4 -->
-          <div class="form__question-box">
-            <label class="question-number" for="q4">Question 4 of 8</label>
-            <div id="q4">
-              <p class="question-box__question">
-                Is this your first purchase from {company_name}?
-              </p>
-              <div class="question-box__answers">
-                <div class="answer">
-                  <input
-                    type="radio"
-                    id="2radio1"
-                    name="radio-group6"
-                    class="radio-input"
-                  />
-                  <label for="2radio1" class="radio-label">Yes</label>
-                </div>
-
-                <div class="answer">
-                  <input
-                    type="radio"
-                    id="2radio2"
-                    name="radio-group6"
-                    class="radio-input"
-                  />
-                  <label for="2radio2" class="radio-label">No</label>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- question 5 -->
-          <div class="form__question-box">
-            <label class="question-number" for="q1">Question 5 of 8</label>
-            <div id="q6">
-              <p class="question-box__question">
-                Did you require any technical support to use the product?
-              </p>
-              <div class="question-box__answers">
-                <div class="answer">
-                  <input
-                    type="radio"
-                    id="3radio1"
-                    name="radio-group7"
-                    class="radio-input"
-                  />
-                  <label for="3radio1" class="radio-label">Yes</label>
-                </div>
-
-                <div class="answer">
-                  <input
-                    type="radio"
-                    id="3radio2"
-                    name="radio-group7"
-                    class="radio-input"
-                  />
-                  <label for="3radio2" class="radio-label">No</label>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- question 6 -->
-          <div class="form__question-box">
-            <label class="question-number" for="q6">Question 6 of 8</label>
-            <div id="q6">
-              <p class="question-box__question">
-                Will you use the product also in future?
-              </p>
-              <div class="question-box__answers">
-                <div class="answer">
-                  <input
-                    type="radio"
-                    id="4radio1"
-                    name="radio-group8"
-                    class="radio-input"
-                  />
-                  <label for="4radio1" class="radio-label">Yes</label>
-                </div>
-
-                <div class="answer">
-                  <input
-                    type="radio"
-                    id="4radio2"
-                    name="radio-group8"
-                    class="radio-input"
-                  />
-                  <label for="4radio2" class="radio-label">No</label>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- question 7 -->
-          <div class="form__question-box">
-            <label class="question-number" for="q7">Question 7 of 8</label>
-            <div id="q7">
-              <p class="question-box__question">
-                How likely is it that you would recommend this product to a
-                friend or colleague?
-              </p>
-              <div class="question-box__answers">
-                <div class="answer">
-                  <input
-                    type="radio"
-                    id="5radio1"
-                    name="radio-group9"
-                    class="radio-input"
-                  />
-                  <label for="5radio1" class="radio-label"
-                    >Highly Unlikely</label
-                  >
-                </div>
-
-                <div class="answer">
-                  <input
-                    type="radio"
-                    id="5radio2"
-                    name="radio-group9"
-                    class="radio-input"
-                  />
-                  <label for="5radio2" class="radio-label">Unlikely</label>
-                </div>
-
-                <div class="answer">
-                  <input
-                    type="radio"
-                    id="5radio3"
-                    name="radio-group9"
-                    class="radio-input"
-                  />
-                  <label for="5radio3" class="radio-label"
-                    >Somewhat Likely</label
-                  >
-                </div>
-
-                <div class="answer">
-                  <input
-                    type="radio"
-                    id="5radio4"
-                    name="radio-group9"
-                    class="radio-input"
-                  />
-                  <label for="5radio4" class="radio-label">Likely</label>
-                </div>
-
-                <div class="answer">
-                  <input
-                    type="radio"
-                    id="5radio5"
-                    name="radio-group9"
-                    class="radio-input"
-                  />
-                  <label for="5radio5" class="radio-label">Highly Likely</label>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- question 8 -->
-          <div class="form__question-box">
-            <label class="question-number" for="q8">Question 8 of 8</label>
-            <div id="q8">
-              <p class="question-box__question">
-                If you have any questions, please, leave them here <br />
-                Or just ask anything to know more about the company, give your
-                opinion or proposal <span class="optional-tag">(optional)</span>
-              </p>
-
-              <div class="question-box__answers">
-                <div class="answer">
-                  <textarea
-                    rows="6"
-                    placeholder="enter your message"
-                  ></textarea>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="form__toggle">
-            <button id="back">back</button>
-            <button id="next">Next</button>
-            <button id="submit">Submit</button>
-          </div>
+          <button class="section-left__button">Start now!</button>
         </section>
-      </main>
-    </div>
 
-    <footer class="footer">
-      <p class="footer__copyright">© mPedigree Technologies, 2024</p>
-    </footer>
+        <footer class="desktop-footer">
+          <p>© 2023 mPedigree Technologies</p>
+          <!-- social media icons -->
+          <ul class="social-icons">
+            <li>
+              <a class="social-icon" href="http://" target="_blank">LinkedIn</a>
+            </li>
+            <a class="social-icon" href="http://" target="_blank">X</a>
+          </ul>
+        </footer>
+      </section>
+
+      <section class="section-right">
+        <label class="question-number">Question 1 of 8</label>
+
+        <!-- question type 1 -->
+        <div class="question-box">
+          <p class="question-box__question">
+            Please rate your overall satisfaction with the product
+          </p>
+          <div class="question-box__answers">
+            <div class="answer">
+              <input
+                type="radio"
+                id="radio1"
+                name="radio-group"
+                class="custom-radio"
+              />
+              <label for="radio1" class="radio-label">Very Dissatisfied</label>
+            </div>
+
+            <div class="answer">
+              <input
+                type="radio"
+                id="radio2"
+                name="radio-group"
+                class="custom-radio"
+              />
+              <label for="radio2" class="radio-label">Dissatisfied</label>
+            </div>
+
+            <div class="answer">
+              <input
+                type="radio"
+                id="radio3"
+                name="radio-group"
+                class="custom-radio"
+              />
+              <label for="radio3" class="radio-label">Neutral</label>
+            </div>
+
+            <div class="answer">
+              <input
+                type="radio"
+                id="radio4"
+                name="radio-group"
+                class="custom-radio"
+              />
+              <label for="radio4" class="radio-label">Satisfied</label>
+            </div>
+
+            <div class="answer">
+              <input
+                type="radio"
+                id="radio5"
+                name="radio-group"
+                class="custom-radio"
+              />
+              <label for="radio5" class="radio-label">Very Satisfied</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- question type 2 -->
+        <div class="question-box">
+          <label class="question-number">Question 2 of 8</label>
+          <div id="q2">
+            <p class="question-box__question">
+              Which goals have you used the {company_name} product for?
+            </p>
+            <div class="question-box__answers">
+              <div class="answer">
+                <textarea rows="6" placeholder="enter your goals"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- question type 3 -->
+        <div class="question-box">
+          <label class="question-number">Question 3 of 8</label>
+          <p class="question-box__question">
+            Please rate your overall satisfaction with the product
+          </p>
+          <div class="question-box__answers">
+            <div class="answer">
+              <input
+                type="checkbox"
+                id="checkbox1"
+                name="radio-group"
+                class="custom-checkbox"
+              />
+              <label for="checkbox1" class="radio-label"
+                >Very Dissatisfied</label
+              >
+            </div>
+
+            <div class="answer">
+              <input
+                type="checkbox"
+                id="checkbox2"
+                name="radio-group"
+                class="custom-checkbox"
+              />
+              <label for="checkbox2" class="radio-label">Dissatisfied</label>
+            </div>
+
+            <div class="answer">
+              <input
+                type="checkbox"
+                id="checkbox3"
+                name="radio-group"
+                class="custom-checkbox"
+              />
+              <label for="checkbox3" class="radio-label">Neutral</label>
+            </div>
+
+            <div class="answer">
+              <input
+                type="checkbox"
+                id="checkbox4"
+                name="radio-group"
+                class="custom-checkbox"
+              />
+              <label for="checkbox4" class="radio-label">Satisfied</label>
+            </div>
+
+            <div class="answer">
+              <input
+                type="checkbox"
+                id="checkbox5"
+                name="radio-group"
+                class="custom-checkbox"
+              />
+              <label for="checkbox5" class="radio-label">Very Satisfied</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- question 4 -->
+        <div class="question-box">
+          <label class="question-number">Question 4 of 8</label>
+          <div>
+            <p class="question-box__question">
+              Please rate your experience with {company_name} product:
+            </p>
+            <div class="question-box__answers">
+              <div class="answer--multi">
+                <div class="answer__group">
+                  <p class="answer__label">Product Packaging</p>
+
+                  <div class="star-rating">
+                    <input
+                      type="radio"
+                      id="a2-star5"
+                      name="a2-rating"
+                      value="5"
+                    />
+                    <label for="a2-star5"></label>
+                    <input
+                      type="radio"
+                      id="a2-star4"
+                      name="a2-rating"
+                      value="4"
+                    />
+                    <label for="a2-star4"></label>
+                    <input
+                      type="radio"
+                      id="a2-star3"
+                      name="a2-rating"
+                      value="3"
+                    />
+                    <label for="a2-star3"></label>
+                    <input
+                      type="radio"
+                      id="a2-star2"
+                      name="a2-rating"
+                      value="2"
+                    />
+                    <label for="a2-star2"></label>
+                    <input
+                      type="radio"
+                      id="a2-star1"
+                      name="a2-rating"
+                      value="1"
+                    />
+                    <label for="a2-star1"></label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="answer--multi">
+                <div class="answer__group">
+                  <p class="answer__label">Instructions for Use</p>
+
+                  <div class="star-rating">
+                    <input
+                      type="radio"
+                      id="a1-star5"
+                      name="a1-rating"
+                      value="5"
+                    />
+                    <label for="a1-star5"></label>
+                    <input
+                      type="radio"
+                      id="a1-star4"
+                      name="a1-rating"
+                      value="4"
+                    />
+                    <label for="a1-star4"></label>
+                    <input
+                      type="radio"
+                      id="a1-star3"
+                      name="a1-rating"
+                      value="3"
+                    />
+                    <label for="a1-star3"></label>
+                    <input
+                      type="radio"
+                      id="a1-star2"
+                      name="a1-rating"
+                      value="2"
+                    />
+                    <label for="a1-star2"></label>
+                    <input
+                      type="radio"
+                      id="a1-star1"
+                      name="a1-rating"
+                      value="1"
+                    />
+                    <label for="a1-star1"></label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="answer--multi">
+                <div class="answer__group">
+                  <p class="answer__label">Quality of the Product</p>
+
+                  <div class="star-rating">
+                    <input
+                      type="radio"
+                      id="a3-star5"
+                      name="a3-rating"
+                      value="5"
+                    />
+                    <label for="a3-star5"></label>
+                    <input
+                      type="radio"
+                      id="a3-star4"
+                      name="a3-rating"
+                      value="4"
+                    />
+                    <label for="a3-star4"></label>
+                    <input
+                      type="radio"
+                      id="a3-star3"
+                      name="a3-rating"
+                      value="3"
+                    />
+                    <label for="a3-star3"></label>
+                    <input
+                      type="radio"
+                      id="a3-star2"
+                      name="a3-rating"
+                      value="2"
+                    />
+                    <label for="a3-star2"></label>
+                    <input
+                      type="radio"
+                      id="a3-star1"
+                      name="a3-rating"
+                      value="1"
+                    />
+                    <label for="a3-star1"></label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="answer--multi">
+                <div class="answer__group">
+                  <p class="answer__label">Product Features</p>
+
+                  <div class="star-rating">
+                    <input
+                      type="radio"
+                      id="a4-star5"
+                      name="a4-rating"
+                      value="5"
+                    />
+                    <label for="a4-star5"></label>
+                    <input
+                      type="radio"
+                      id="a4-star4"
+                      name="a4-rating"
+                      value="4"
+                    />
+                    <label for="a4-star4"></label>
+                    <input
+                      type="radio"
+                      id="a4-star3"
+                      name="a4-rating"
+                      value="3"
+                    />
+                    <label for="a4-star3"></label>
+                    <input
+                      type="radio"
+                      id="a4-star2"
+                      name="a4-rating"
+                      value="2"
+                    />
+                    <label for="a4-star2"></label>
+                    <input
+                      type="radio"
+                      id="a4-star1"
+                      name="a4-rating"
+                      value="1"
+                    />
+                    <label for="a4-star1"></label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="answer--multi">
+                <div class="answer__group">
+                  <p class="answer__label">Ease of Use</p>
+                  <div class="star-rating">
+                    <input
+                      type="radio"
+                      id="a5-star5"
+                      name="a5-rating"
+                      value="5"
+                    />
+                    <label for="a5-star5"></label>
+                    <input
+                      type="radio"
+                      id="a5-star4"
+                      name="a5-rating"
+                      value="4"
+                    />
+                    <label for="a5-star4"></label>
+                    <input
+                      type="radio"
+                      id="a5-star3"
+                      name="a5-rating"
+                      value="3"
+                    />
+                    <label for="a5-star3"></label>
+                    <input
+                      type="radio"
+                      id="a5-star2"
+                      name="a5-rating"
+                      value="2"
+                    />
+                    <label for="a5-star2"></label>
+                    <input
+                      type="radio"
+                      id="a5-star1"
+                      name="a5-rating"
+                      value="1"
+                    />
+                    <label for="a5-star1"></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form__toggle">
+          <button disabled id="back">back</button>
+          <button id="next">Next</button>
+        </div>
+      </section>
+
+      <footer class="mobile-footer">
+        <p>© 2023 mPedigree Technologies</p>
+        <!-- social media icons -->
+        <ul class="social-icons">
+          <li>
+            <a class="social-icon" href="http://" target="_blank">LinkedIn</a>
+          </li>
+          <a class="social-icon" href="http://" target="_blank">X</a>
+        </ul>
+      </footer>
+    </main>
 
     <script src="index.js"></script>
   </body>
